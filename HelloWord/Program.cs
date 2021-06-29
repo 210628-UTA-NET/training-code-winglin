@@ -5,7 +5,6 @@ using HouseFunction;
     Naming conventions in C#
     - PascalCase for most naming convetion
     - camelCase for naming fields
-
 */
 
 namespace HelloWord
@@ -22,12 +21,34 @@ namespace HelloWord
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine(_first + _last);
+            Console.WriteLine("Something");
+            
+            Test obj = new Test(); //Will instantiate the Test class
+            obj.SomeMethod();//Method was called because the class was instantiated
 
-            //House example
+            Console.WriteLine(_first + " " + _last);
+            Console.WriteLine(obj.SomeMethod());
+
+            // Console.WriteLine(args[0] + args[1]);
+
+            //House Example
             House objHouse = new House();
+            Console.WriteLine(objHouse.getColor());
+            objHouse.setColor("Blue");
+            Console.WriteLine(objHouse.getColor());
+            objHouse.Price = 8000;
+            Console.WriteLine(objHouse.Price);
+            objHouse.Name = "Stephen's House";
+            Console.WriteLine(objHouse.Name);
+        }
+    }
 
+    class Test
+    {
+        public string SomeMethod()
+        {
+            //return keyword will tell that to return the follow implemtation
+            return "Hello World SomeMethod";
         }
     }
 }
