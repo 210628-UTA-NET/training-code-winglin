@@ -23,8 +23,8 @@ namespace HelloWord
         {
             Console.WriteLine("Something");
             
-            Test obj = new Test(); //Will instantiate the Test class
-            obj.SomeMethod();//Method was called because the class was instantiated
+            Test obj = new Test();  //Will instantiate the Test class
+            //obj.SomeMethod();  //Method was called because the class was instantiated
 
             Console.WriteLine(_first + " " + _last);
             Console.WriteLine(obj.SomeMethod());
@@ -38,7 +38,7 @@ namespace HelloWord
             Console.WriteLine(objHouse.getColor());
             objHouse.Price = 8000;
             Console.WriteLine(objHouse.Price);
-            objHouse.Name = "Stephen's House";
+            objHouse.Name = "Wing's Party Pad";
             Console.WriteLine(objHouse.Name);
         }
     }
@@ -50,13 +50,5 @@ namespace HelloWord
             //return keyword will tell that to return the follow implemtation
             return "Hello World SomeMethod";
         }
-    }
-}
-
-class Test
-{
-    public static void SomeMethod()
-    {
-        Console.WriteLine("SomeMethod was called");
     }
 }
