@@ -7,7 +7,7 @@ using HouseFunction;
     - camelCase for naming fields
 */
 
-namespace HelloWord
+namespace HelloWorld
 {
     class Program
     {
@@ -40,6 +40,8 @@ namespace HelloWord
             Console.WriteLine(objHouse.Price);
             objHouse.Name = "Stephen's House";
             Console.WriteLine(objHouse.Name);
+
+            BoxingAndUnboxing.BoxingAndUnboxingMain();
         }
     }
 
